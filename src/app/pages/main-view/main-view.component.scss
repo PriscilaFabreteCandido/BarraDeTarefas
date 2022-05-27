@@ -6,7 +6,7 @@
 }
 
 .app-name{
-  font-size: 26px;
+  font-size: 2rem;
   font-family: 'Signika Negative', sans-serif;
   font-weight: bold;
 
@@ -19,9 +19,11 @@
 }
 h1{
   font-weight: 500;
+  font-size: 1.2rem;
 }
 p{
   font-weight: 400;
+  font-size: 0.8rem;
 }
 .has-gradient-text{
 
@@ -126,7 +128,7 @@ p{
   justify-content: space-between;
 }
 .input{
-  width: 70%;
+  width: 80%;
   display: flex;
   justify-content: space-around;
   padding: 10px 16px;
@@ -164,7 +166,5 @@ p{
 
 .task{
   display: flex;
-  div{
-    width: 90%;
-  }
+
 }
