@@ -1,0 +1,46 @@
+
+<div class="root">
+  <div class="navbar has-background">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <h1 class="app-name has-gradient-text">Priscila | Code</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="board">
+    <div class="board-wrapper">
+
+      <div class="board-columns" cdkDropListGroup>
+        <div class="board-column" >
+
+          <div class="column-title">
+           <div> Barra de Tarefas</div>
+            <div  class="input" type="text">
+              <input placeholder="digite uma tarefa" #inputTarefa >
+              <button class="button-1" (click)="adicionar(inputTarefa.value)">adicionar</button>
+            </div>
+          </div>
+
+          <div class="tasks-container" ngClass="Board"
+          cdkDropList
+          [cdkDropListData]="listaTarefa"
+          (cdkDropListDropped)="drop($event)"
+           >
+            <div class="task" *ngFor="let item of listaTarefa" cdkDrag>
+              <div>{{item.name}}</div>
+              <button class="button" (click)="excluir(item.id)">
+                <h1>X</h1>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
