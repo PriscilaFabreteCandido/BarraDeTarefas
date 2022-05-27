@@ -126,9 +126,10 @@ p{
 .column-title{
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 .input{
-  width: 80%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
   padding: 10px 16px;
@@ -168,5 +169,10 @@ p{
   display: flex;
   div{
     width: 90%;
+  }
+}
+@media(max-widht: 600px){
+  .input{
+    flex-direction: column;
   }
 }

@@ -28,6 +28,7 @@ export class MainViewComponent implements OnInit {
     const tarefaEncontrada = this.listaTarefa.find(item => item.name.toLowerCase() == nomeTarefa.toLowerCase());
     if (!tarefaEncontrada){
       this.listaTarefa.push({id: this.listaTarefa.length, name: nomeTarefa});
+      (document.getElementById("inputTarefa") as HTMLInputElement).innerText = "";
     }
 
   }
