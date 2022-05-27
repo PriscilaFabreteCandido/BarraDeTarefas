@@ -129,13 +129,16 @@ p{
   width: 50%;
   display: flex;
   justify-content: space-around;
+  padding: 10px 16px;
 }
 
 .input input{
+  font-size: 1rem;
   box-shadow: 0 0 0 0;
   border: 0 none;
   outline: rgba(0, 0, 0, 0.05);
   width: 95%;
+
 }
 .button{
   width: 10%;
@@ -156,6 +159,7 @@ p{
   border-radius: 4px;
   font-weight: 400;
   border: none;
+  font-size: 0.8rem;
 }
 
 .task{
